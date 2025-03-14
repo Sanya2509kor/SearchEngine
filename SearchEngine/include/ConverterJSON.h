@@ -19,9 +19,9 @@ public:
     std::vector<std::string> GetRequests();
     void putAnswers(std::vector<std::vector<RelativeIndex>>answers);
 private:
-    std::string config_json = "../config.json";
-    std::string requests_json = "../requests.json";
-    std::string answers_json = "../answers.json";
+    std::string config_json = "config.json";
+    std::string requests_json = "requests.json";
+    std::string answers_json = "answers.json";
 };
 
 
