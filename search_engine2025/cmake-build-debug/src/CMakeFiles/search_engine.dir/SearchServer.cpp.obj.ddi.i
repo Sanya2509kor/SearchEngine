@@ -1,13 +1,13 @@
-# 0 "D:/c++1/search_engine/src/SearchServer.cpp"
-# 1 "D:\\c++1\\search_engine\\cmake-build-debug//"
+# 0 "D:/Engine/search_engine2025/src/SearchServer.cpp"
+# 1 "D:\\Engine\\search_engine2025\\cmake-build-debug//"
 # 0 "<built-in>"
 # 0 "<command-line>"
-# 1 "D:/c++1/search_engine/src/SearchServer.cpp"
-# 1 "D:/c++1/search_engine/include/SearchServer.h" 1
+# 1 "D:/Engine/search_engine2025/src/SearchServer.cpp"
+# 1 "D:/Engine/search_engine2025/include/SearchServer.h" 1
 
 
 
-# 1 "D:/c++1/search_engine/include/InvertedIndex.h" 1
+# 1 "D:/Engine/search_engine2025/include/InvertedIndex.h" 1
 
 
 
@@ -28141,7 +28141,7 @@ namespace std
     }
 
 }
-# 7 "D:/c++1/search_engine/include/InvertedIndex.h" 2
+# 7 "D:/Engine/search_engine2025/include/InvertedIndex.h" 2
 # 1 "C:/mingw64/include/c++/14.2.0/iostream" 1 3
 # 36 "C:/mingw64/include/c++/14.2.0/iostream" 3
        
@@ -72959,7 +72959,7 @@ namespace std
 # 85 "C:/mingw64/include/c++/14.2.0/iostream" 3
 
 }
-# 8 "D:/c++1/search_engine/include/InvertedIndex.h" 2
+# 8 "D:/Engine/search_engine2025/include/InvertedIndex.h" 2
 # 1 "C:/mingw64/include/c++/14.2.0/map" 1 3
 # 58 "C:/mingw64/include/c++/14.2.0/map" 3
        
@@ -77526,7 +77526,7 @@ namespace std
     }
 
 }
-# 9 "D:/c++1/search_engine/include/InvertedIndex.h" 2
+# 9 "D:/Engine/search_engine2025/include/InvertedIndex.h" 2
 # 1 "C:/mingw64/include/c++/14.2.0/fstream" 1 3
 # 36 "C:/mingw64/include/c++/14.2.0/fstream" 3
        
@@ -79557,7 +79557,7 @@ namespace std
 
 }
 # 1361 "C:/mingw64/include/c++/14.2.0/fstream" 2 3
-# 10 "D:/c++1/search_engine/include/InvertedIndex.h" 2
+# 10 "D:/Engine/search_engine2025/include/InvertedIndex.h" 2
 # 1 "C:/mingw64/include/c++/14.2.0/sstream" 1 3
 # 36 "C:/mingw64/include/c++/14.2.0/sstream" 3
        
@@ -80738,7 +80738,7 @@ namespace std
 
 }
 # 1239 "C:/mingw64/include/c++/14.2.0/sstream" 2 3
-# 11 "D:/c++1/search_engine/include/InvertedIndex.h" 2
+# 11 "D:/Engine/search_engine2025/include/InvertedIndex.h" 2
 # 1 "C:/mingw64/include/c++/14.2.0/mutex" 1 3
 # 32 "C:/mingw64/include/c++/14.2.0/mutex" 3
        
@@ -83416,7 +83416,7 @@ namespace std
 # 1021 "C:/mingw64/include/c++/14.2.0/mutex" 3
 
 }
-# 12 "D:/c++1/search_engine/include/InvertedIndex.h" 2
+# 12 "D:/Engine/search_engine2025/include/InvertedIndex.h" 2
 # 1 "C:/mingw64/include/c++/14.2.0/thread" 1 3
 # 32 "C:/mingw64/include/c++/14.2.0/thread" 3
        
@@ -90403,11 +90403,11 @@ namespace std
 
 
 }
-# 13 "D:/c++1/search_engine/include/InvertedIndex.h" 2
+# 13 "D:/Engine/search_engine2025/include/InvertedIndex.h" 2
 
 
 
-# 15 "D:/c++1/search_engine/include/InvertedIndex.h"
+# 15 "D:/Engine/search_engine2025/include/InvertedIndex.h"
 struct Entry {
     size_t doc_id, count;
 
@@ -90428,7 +90428,7 @@ private:
     std::map<std::string, std::vector<Entry>> freq_dictionary;
     std::mutex mut;
 };
-# 5 "D:/c++1/search_engine/include/SearchServer.h" 2
+# 5 "D:/Engine/search_engine2025/include/SearchServer.h" 2
 
 
 struct RelativeIndex{
@@ -90455,7 +90455,7 @@ private:
     InvertedIndex& _index;
     int responsesLimit;
 };
-# 2 "D:/c++1/search_engine/src/SearchServer.cpp" 2
+# 2 "D:/Engine/search_engine2025/src/SearchServer.cpp" 2
 
 
 std::vector<std::vector<RelativeIndex> > SearchServer::search(const std::vector<std::string> &queries_input) {
@@ -90472,7 +90472,7 @@ std::vector<std::vector<RelativeIndex> > SearchServer::search(const std::vector<
             }
             if (unique) unique_list.push_back(word);
         }
-# 100 "D:/c++1/search_engine/src/SearchServer.cpp"
+# 100 "D:/Engine/search_engine2025/src/SearchServer.cpp"
         std::map<int, int> sum_words;
         double max = 0;
         for ( auto &word : unique_list) {

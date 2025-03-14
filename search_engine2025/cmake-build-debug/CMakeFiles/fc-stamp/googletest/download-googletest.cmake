@@ -22,14 +22,14 @@ function(check_file_hash has_hash hash_is_good)
   set("${has_hash}" TRUE PARENT_SCOPE)
 
   message(VERBOSE "verifying file...
-       file='D:/c++/search_engine2025/cmake-build-debug/_deps/googletest-tmp/609281088cfefc76f9d0ce82e1ff6c30cc3591e5.zip'")
+       file='D:/Engine/search_engine2025/cmake-build-debug/_deps/googletest-tmp/609281088cfefc76f9d0ce82e1ff6c30cc3591e5.zip'")
 
-  file("" "D:/c++/search_engine2025/cmake-build-debug/_deps/googletest-tmp/609281088cfefc76f9d0ce82e1ff6c30cc3591e5.zip" actual_value)
+  file("" "D:/Engine/search_engine2025/cmake-build-debug/_deps/googletest-tmp/609281088cfefc76f9d0ce82e1ff6c30cc3591e5.zip" actual_value)
 
   if(NOT "${actual_value}" STREQUAL "")
     set("${hash_is_good}" FALSE PARENT_SCOPE)
     message(VERBOSE " hash of
-    D:/c++/search_engine2025/cmake-build-debug/_deps/googletest-tmp/609281088cfefc76f9d0ce82e1ff6c30cc3591e5.zip
+    D:/Engine/search_engine2025/cmake-build-debug/_deps/googletest-tmp/609281088cfefc76f9d0ce82e1ff6c30cc3591e5.zip
   does not match expected value
     expected: ''
       actual: '${actual_value}'")
@@ -71,32 +71,32 @@ function(sleep_before_download attempt)
   execute_process(COMMAND "${CMAKE_COMMAND}" -E sleep "${sleep_seconds}")
 endfunction()
 
-if(EXISTS "D:/c++/search_engine2025/cmake-build-debug/_deps/googletest-tmp/609281088cfefc76f9d0ce82e1ff6c30cc3591e5.zip")
+if(EXISTS "D:/Engine/search_engine2025/cmake-build-debug/_deps/googletest-tmp/609281088cfefc76f9d0ce82e1ff6c30cc3591e5.zip")
   check_file_hash(has_hash hash_is_good)
   if(has_hash)
     if(hash_is_good)
       message(VERBOSE "File already exists and hash match (skip download):
-  file='D:/c++/search_engine2025/cmake-build-debug/_deps/googletest-tmp/609281088cfefc76f9d0ce82e1ff6c30cc3591e5.zip'
+  file='D:/Engine/search_engine2025/cmake-build-debug/_deps/googletest-tmp/609281088cfefc76f9d0ce82e1ff6c30cc3591e5.zip'
   =''"
       )
       return()
     else()
       message(VERBOSE "File already exists but hash mismatch. Removing...")
-      file(REMOVE "D:/c++/search_engine2025/cmake-build-debug/_deps/googletest-tmp/609281088cfefc76f9d0ce82e1ff6c30cc3591e5.zip")
+      file(REMOVE "D:/Engine/search_engine2025/cmake-build-debug/_deps/googletest-tmp/609281088cfefc76f9d0ce82e1ff6c30cc3591e5.zip")
     endif()
   else()
     message(VERBOSE "File already exists but no hash specified (use URL_HASH):
-  file='D:/c++/search_engine2025/cmake-build-debug/_deps/googletest-tmp/609281088cfefc76f9d0ce82e1ff6c30cc3591e5.zip'
+  file='D:/Engine/search_engine2025/cmake-build-debug/_deps/googletest-tmp/609281088cfefc76f9d0ce82e1ff6c30cc3591e5.zip'
 Old file will be removed and new file downloaded from URL."
     )
-    file(REMOVE "D:/c++/search_engine2025/cmake-build-debug/_deps/googletest-tmp/609281088cfefc76f9d0ce82e1ff6c30cc3591e5.zip")
+    file(REMOVE "D:/Engine/search_engine2025/cmake-build-debug/_deps/googletest-tmp/609281088cfefc76f9d0ce82e1ff6c30cc3591e5.zip")
   endif()
 endif()
 
 set(retry_number 5)
 
 message(VERBOSE "Downloading...
-   dst='D:/c++/search_engine2025/cmake-build-debug/_deps/googletest-tmp/609281088cfefc76f9d0ce82e1ff6c30cc3591e5.zip'
+   dst='D:/Engine/search_engine2025/cmake-build-debug/_deps/googletest-tmp/609281088cfefc76f9d0ce82e1ff6c30cc3591e5.zip'
    timeout='none'
    inactivity timeout='none'"
 )
@@ -119,7 +119,7 @@ foreach(i RANGE ${retry_number})
 
       file(
         DOWNLOAD
-        "${url}" "D:/c++/search_engine2025/cmake-build-debug/_deps/googletest-tmp/609281088cfefc76f9d0ce82e1ff6c30cc3591e5.zip"
+        "${url}" "D:/Engine/search_engine2025/cmake-build-debug/_deps/googletest-tmp/609281088cfefc76f9d0ce82e1ff6c30cc3591e5.zip"
         SHOW_PROGRESS
         # no TIMEOUT
         # no INACTIVITY_TIMEOUT
@@ -136,7 +136,7 @@ foreach(i RANGE ${retry_number})
         check_file_hash(has_hash hash_is_good)
         if(has_hash AND NOT hash_is_good)
           message(VERBOSE "Hash mismatch, removing...")
-          file(REMOVE "D:/c++/search_engine2025/cmake-build-debug/_deps/googletest-tmp/609281088cfefc76f9d0ce82e1ff6c30cc3591e5.zip")
+          file(REMOVE "D:/Engine/search_engine2025/cmake-build-debug/_deps/googletest-tmp/609281088cfefc76f9d0ce82e1ff6c30cc3591e5.zip")
         else()
           message(VERBOSE "Downloading... done")
           return()

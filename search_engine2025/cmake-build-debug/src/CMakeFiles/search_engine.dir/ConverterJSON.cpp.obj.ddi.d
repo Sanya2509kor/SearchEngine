@@ -1,6 +1,6 @@
 src\CMakeFiles\search_engine.dir\ConverterJSON.cpp.obj.ddi: \
- D:/c++1/search_engine/src/ConverterJSON.cpp \
- D:/c++1/search_engine/include/ConverterJSON.h \
+ D:/Engine/search_engine2025/src/ConverterJSON.cpp \
+ D:/Engine/search_engine2025/include/ConverterJSON.h \
  C:/mingw64/include/c++/14.2.0/fstream \
  C:/mingw64/include/c++/14.2.0/bits/requires_hosted.h \
  C:/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -181,7 +181,41 @@ src\CMakeFiles\search_engine.dir\ConverterJSON.cpp.obj.ddi: \
  C:/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++io.h \
  C:/mingw64/include/c++/14.2.0/bits/fstream.tcc \
  C:/mingw64/include/c++/14.2.0/iostream \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/json.hpp \
+ C:/mingw64/include/c++/14.2.0/vector \
+ C:/mingw64/include/c++/14.2.0/bits/stl_uninitialized.h \
+ C:/mingw64/include/c++/14.2.0/bits/stl_vector.h \
+ C:/mingw64/include/c++/14.2.0/bits/stl_bvector.h \
+ C:/mingw64/include/c++/14.2.0/bits/vector.tcc \
+ D:/Engine/search_engine2025/include/SearchServer.h \
+ D:/Engine/search_engine2025/include/InvertedIndex.h \
+ C:/mingw64/include/c++/14.2.0/map \
+ C:/mingw64/include/c++/14.2.0/bits/stl_tree.h \
+ C:/mingw64/include/c++/14.2.0/ext/aligned_buffer.h \
+ C:/mingw64/include/c++/14.2.0/bits/node_handle.h \
+ C:/mingw64/include/c++/14.2.0/bits/stl_map.h \
+ C:/mingw64/include/c++/14.2.0/bits/stl_multimap.h \
+ C:/mingw64/include/c++/14.2.0/bits/erase_if.h \
+ C:/mingw64/include/c++/14.2.0/sstream \
+ C:/mingw64/include/c++/14.2.0/bits/sstream.tcc \
+ C:/mingw64/include/c++/14.2.0/mutex \
+ C:/mingw64/include/c++/14.2.0/bits/chrono.h \
+ C:/mingw64/include/c++/14.2.0/ratio \
+ C:/mingw64/include/c++/14.2.0/bits/std_mutex.h \
+ C:/mingw64/include/c++/14.2.0/bits/unique_lock.h \
+ C:/mingw64/include/c++/14.2.0/thread \
+ C:/mingw64/include/c++/14.2.0/stop_token \
+ C:/mingw64/include/c++/14.2.0/atomic \
+ C:/mingw64/include/c++/14.2.0/bits/atomic_base.h \
+ C:/mingw64/include/c++/14.2.0/bits/atomic_lockfree_defines.h \
+ C:/mingw64/include/c++/14.2.0/bits/atomic_wait.h \
+ C:/mingw64/include/c++/14.2.0/bits/std_thread.h \
+ C:/mingw64/include/c++/14.2.0/bits/unique_ptr.h \
+ C:/mingw64/include/c++/14.2.0/semaphore \
+ C:/mingw64/include/c++/14.2.0/bits/semaphore_base.h \
+ C:/mingw64/include/c++/14.2.0/bits/atomic_timed_wait.h \
+ C:/mingw64/include/c++/14.2.0/bits/this_thread_sleep.h \
+ C:/mingw64/x86_64-w64-mingw32/include/semaphore.h \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/json.hpp \
  C:/mingw64/include/c++/14.2.0/algorithm \
  C:/mingw64/include/c++/14.2.0/bits/ranges_algo.h \
  C:/mingw64/include/c++/14.2.0/pstl/glue_algorithm_defs.h \
@@ -192,14 +226,6 @@ src\CMakeFiles\search_engine.dir\ConverterJSON.cpp.obj.ddi: \
  C:/mingw64/include/c++/14.2.0/bits/unordered_map.h \
  C:/mingw64/include/c++/14.2.0/bits/hashtable.h \
  C:/mingw64/include/c++/14.2.0/bits/hashtable_policy.h \
- C:/mingw64/include/c++/14.2.0/ext/aligned_buffer.h \
- C:/mingw64/include/c++/14.2.0/bits/node_handle.h \
- C:/mingw64/include/c++/14.2.0/bits/erase_if.h \
- C:/mingw64/include/c++/14.2.0/vector \
- C:/mingw64/include/c++/14.2.0/bits/stl_uninitialized.h \
- C:/mingw64/include/c++/14.2.0/bits/stl_vector.h \
- C:/mingw64/include/c++/14.2.0/bits/stl_bvector.h \
- C:/mingw64/include/c++/14.2.0/bits/vector.tcc \
  C:/mingw64/include/c++/14.2.0/bits/move_only_function.h \
  C:/mingw64/include/c++/14.2.0/bits/mofunc_impl.h \
  C:/mingw64/include/c++/14.2.0/iterator \
@@ -207,32 +233,23 @@ src\CMakeFiles\search_engine.dir\ConverterJSON.cpp.obj.ddi: \
  C:/mingw64/include/c++/14.2.0/memory \
  C:/mingw64/include/c++/14.2.0/bits/stl_raw_storage_iter.h \
  C:/mingw64/include/c++/14.2.0/bits/align.h \
- C:/mingw64/include/c++/14.2.0/bits/unique_ptr.h \
  C:/mingw64/include/c++/14.2.0/bits/shared_ptr.h \
  C:/mingw64/include/c++/14.2.0/bits/shared_ptr_base.h \
  C:/mingw64/include/c++/14.2.0/bits/allocated_ptr.h \
  C:/mingw64/include/c++/14.2.0/ext/concurrence.h \
  C:/mingw64/include/c++/14.2.0/bits/shared_ptr_atomic.h \
- C:/mingw64/include/c++/14.2.0/bits/atomic_base.h \
- C:/mingw64/include/c++/14.2.0/bits/atomic_lockfree_defines.h \
- C:/mingw64/include/c++/14.2.0/bits/atomic_wait.h \
- C:/mingw64/include/c++/14.2.0/bits/std_mutex.h \
  C:/mingw64/include/c++/14.2.0/backward/auto_ptr.h \
  C:/mingw64/include/c++/14.2.0/bits/ranges_uninitialized.h \
  C:/mingw64/include/c++/14.2.0/bits/out_ptr.h \
  C:/mingw64/include/c++/14.2.0/pstl/glue_memory_defs.h \
  C:/mingw64/include/c++/14.2.0/utility \
  C:/mingw64/include/c++/14.2.0/bits/stl_relops.h \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/adl_serializer.hpp \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/detail/abi_macros.hpp \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/detail/conversions/from_json.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/adl_serializer.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/detail/abi_macros.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/detail/conversions/from_json.hpp \
  C:/mingw64/include/c++/14.2.0/forward_list \
  C:/mingw64/include/c++/14.2.0/bits/forward_list.h \
  C:/mingw64/include/c++/14.2.0/bits/forward_list.tcc \
- C:/mingw64/include/c++/14.2.0/map \
- C:/mingw64/include/c++/14.2.0/bits/stl_tree.h \
- C:/mingw64/include/c++/14.2.0/bits/stl_map.h \
- C:/mingw64/include/c++/14.2.0/bits/stl_multimap.h \
  C:/mingw64/include/c++/14.2.0/valarray \
  C:/mingw64/include/c++/14.2.0/cmath \
  C:/mingw64/x86_64-w64-mingw32/include/math.h \
@@ -258,82 +275,65 @@ src\CMakeFiles\search_engine.dir\ConverterJSON.cpp.obj.ddi: \
  C:/mingw64/include/c++/14.2.0/bits/gslice_array.h \
  C:/mingw64/include/c++/14.2.0/bits/mask_array.h \
  C:/mingw64/include/c++/14.2.0/bits/indirect_array.h \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/detail/exceptions.hpp \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/detail/value_t.hpp \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/detail/macro_scope.hpp \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/detail/meta/detected.hpp \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/detail/meta/void_t.hpp \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/thirdparty/hedley/hedley.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/detail/exceptions.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/detail/value_t.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/detail/macro_scope.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/detail/meta/detected.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/detail/meta/void_t.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/thirdparty/hedley/hedley.hpp \
  C:/mingw64/include/c++/14.2.0/version \
  C:/mingw64/include/c++/14.2.0/cassert \
  C:/mingw64/x86_64-w64-mingw32/include/assert.h \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/detail/string_escape.hpp \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/detail/input/position_t.hpp \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/detail/meta/cpp_future.hpp \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/detail/meta/type_traits.hpp \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/detail/iterators/iterator_traits.hpp \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/detail/meta/call_std/begin.hpp \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/detail/meta/call_std/end.hpp \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/json_fwd.hpp \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/detail/string_concat.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/detail/string_escape.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/detail/input/position_t.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/detail/meta/cpp_future.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/detail/meta/type_traits.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/detail/iterators/iterator_traits.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/detail/meta/call_std/begin.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/detail/meta/call_std/end.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/json_fwd.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/detail/string_concat.hpp \
  C:/mingw64/include/c++/14.2.0/cstring \
  C:/mingw64/x86_64-w64-mingw32/include/string.h \
  C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/detail/meta/identity_tag.hpp \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/detail/meta/std_fs.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/detail/meta/identity_tag.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/detail/meta/std_fs.hpp \
  C:/mingw64/include/c++/14.2.0/filesystem \
  C:/mingw64/include/c++/14.2.0/bits/fs_fwd.h \
- C:/mingw64/include/c++/14.2.0/bits/chrono.h \
- C:/mingw64/include/c++/14.2.0/ratio \
  C:/mingw64/include/c++/14.2.0/bits/fs_path.h \
  C:/mingw64/include/c++/14.2.0/iomanip \
  C:/mingw64/include/c++/14.2.0/bits/quoted_string.h \
- C:/mingw64/include/c++/14.2.0/sstream \
- C:/mingw64/include/c++/14.2.0/bits/sstream.tcc \
  C:/mingw64/include/c++/14.2.0/codecvt \
  C:/mingw64/include/c++/14.2.0/bits/fs_dir.h \
  C:/mingw64/include/c++/14.2.0/bits/fs_ops.h \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/detail/conversions/to_json.hpp \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/detail/iterators/iteration_proxy.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/detail/conversions/to_json.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/detail/iterators/iteration_proxy.hpp \
  C:/mingw64/include/c++/14.2.0/ranges \
  C:/mingw64/include/c++/14.2.0/bits/elements_of.h \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/detail/string_utils.hpp \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/byte_container_with_subtype.hpp \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/detail/hash.hpp \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/detail/input/binary_reader.hpp \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/detail/input/input_adapters.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/detail/string_utils.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/byte_container_with_subtype.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/detail/hash.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/detail/input/binary_reader.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/detail/input/input_adapters.hpp \
  C:/mingw64/include/c++/14.2.0/numeric \
  C:/mingw64/include/c++/14.2.0/bits/stl_numeric.h \
  C:/mingw64/include/c++/14.2.0/pstl/glue_numeric_defs.h \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/detail/input/json_sax.hpp \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/detail/input/lexer.hpp \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/detail/meta/is_sax.hpp \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/detail/input/parser.hpp \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/detail/iterators/internal_iterator.hpp \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/detail/iterators/primitive_iterator.hpp \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/detail/iterators/iter_impl.hpp \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/detail/iterators/json_reverse_iterator.hpp \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/detail/json_custom_base_class.hpp \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/detail/json_pointer.hpp \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/detail/json_ref.hpp \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/detail/output/binary_writer.hpp \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/detail/output/output_adapters.hpp \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/detail/output/serializer.hpp \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/detail/conversions/to_chars.hpp \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/ordered_map.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/detail/input/json_sax.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/detail/input/lexer.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/detail/meta/is_sax.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/detail/input/parser.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/detail/iterators/internal_iterator.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/detail/iterators/primitive_iterator.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/detail/iterators/iter_impl.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/detail/iterators/json_reverse_iterator.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/detail/json_custom_base_class.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/detail/json_pointer.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/detail/json_ref.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/detail/output/binary_writer.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/detail/output/output_adapters.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/detail/output/serializer.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/detail/conversions/to_chars.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/ordered_map.hpp \
  C:/mingw64/include/c++/14.2.0/any \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/detail/macro_unscope.hpp \
- D:/c++1/search_engine/nlohmann_json/include/nlohmann/thirdparty/hedley/hedley_undef.hpp \
- D:/c++1/search_engine/include/SearchServer.h \
- D:/c++1/search_engine/include/InvertedIndex.h \
- C:/mingw64/include/c++/14.2.0/mutex \
- C:/mingw64/include/c++/14.2.0/bits/unique_lock.h \
- C:/mingw64/include/c++/14.2.0/thread \
- C:/mingw64/include/c++/14.2.0/stop_token \
- C:/mingw64/include/c++/14.2.0/atomic \
- C:/mingw64/include/c++/14.2.0/bits/std_thread.h \
- C:/mingw64/include/c++/14.2.0/semaphore \
- C:/mingw64/include/c++/14.2.0/bits/semaphore_base.h \
- C:/mingw64/include/c++/14.2.0/bits/atomic_timed_wait.h \
- C:/mingw64/include/c++/14.2.0/bits/this_thread_sleep.h \
- C:/mingw64/x86_64-w64-mingw32/include/semaphore.h
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/detail/macro_unscope.hpp \
+ D:/Engine/search_engine2025/nlohmann_json/include/nlohmann/thirdparty/hedley/hedley_undef.hpp

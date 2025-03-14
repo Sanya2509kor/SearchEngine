@@ -1,6 +1,6 @@
 src\CMakeFiles\search_engine.dir\InvertedIndex.cpp.obj.ddi: \
- D:/c++1/search_engine/src/InvertedIndex.cpp \
- D:/c++1/search_engine/include/InvertedIndex.h \
+ D:/Engine/search_engine2025/src/InvertedIndex.cpp \
+ D:/Engine/search_engine2025/include/InvertedIndex.h \
  C:/mingw64/include/c++/14.2.0/vector \
  C:/mingw64/include/c++/14.2.0/bits/requires_hosted.h \
  C:/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \

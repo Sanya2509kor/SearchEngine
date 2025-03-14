@@ -1,4 +1,4 @@
-# Install script for directory: D:/c++/search_engine2025/src
+# Install script for directory: D:/Engine/search_engine2025/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

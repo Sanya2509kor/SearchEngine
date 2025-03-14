@@ -1,5 +1,5 @@
-if(EXISTS "D:/c++/search_engine2025/cmake-build-debug/test/testSearch_engine/testSearch_engine[1]_tests.cmake")
-  include("D:/c++/search_engine2025/cmake-build-debug/test/testSearch_engine/testSearch_engine[1]_tests.cmake")
+if(EXISTS "D:/Engine/search_engine2025/cmake-build-debug/test/testSearch_engine/testSearch_engine[1]_tests.cmake")
+  include("D:/Engine/search_engine2025/cmake-build-debug/test/testSearch_engine/testSearch_engine[1]_tests.cmake")
 else()
   add_test(testSearch_engine_NOT_BUILT testSearch_engine_NOT_BUILT)
 endif()

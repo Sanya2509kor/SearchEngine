@@ -7,10 +7,9 @@
 
 #include <fstream>
 #include <iostream>
-#include "../nlohmann_json/include/nlohmann/json.hpp"
 #include <vector>
 #include "SearchServer.h"
-
+#include "../nlohmann_json/include/nlohmann/json.hpp"
 
 class ConverterJSON {
 public:

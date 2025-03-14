@@ -5,8 +5,8 @@ cmake_minimum_required(VERSION 3.5)
 
 # Make file names absolute:
 #
-get_filename_component(filename "D:/c++/search_engine2025/cmake-build-debug/_deps/googletest-tmp/609281088cfefc76f9d0ce82e1ff6c30cc3591e5.zip" ABSOLUTE)
-get_filename_component(directory "D:/c++/search_engine2025/cmake-build-debug/_deps/googletest-src" ABSOLUTE)
+get_filename_component(filename "D:/Engine/search_engine2025/cmake-build-debug/_deps/googletest-tmp/609281088cfefc76f9d0ce82e1ff6c30cc3591e5.zip" ABSOLUTE)
+get_filename_component(directory "D:/Engine/search_engine2025/cmake-build-debug/_deps/googletest-src" ABSOLUTE)
 
 message(VERBOSE "extracting...
      src='${filename}'

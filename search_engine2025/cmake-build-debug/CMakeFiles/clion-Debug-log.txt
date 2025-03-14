@@ -1,87 +1,5 @@
-"C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2024.3.2/bin/ninja/win/x64/ninja.exe" -DCMAKE_PREFIX_PATH=D:\Qt\5.12.12\mingw73_64\lib\cmake -G Ninja -S D:\c++\search_engine2025 -B D:\c++\search_engine2025\cmake-build-debug
--- The C compiler identification is GNU 14.2.0
--- The CXX compiler identification is GNU 14.2.0
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: C:/mingw64/bin/gcc.exe - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: C:/mingw64/bin/c++.exe - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Using the multi-header code from D:/c++/search_engine2025/nlohmann_json/include/
--- [download 1% complete]
--- [download 2% complete]
--- [download 3% complete]
--- [download 4% complete]
--- [download 6% complete]
--- [download 7% complete]
--- [download 8% complete]
--- [download 9% complete]
--- [download 10% complete]
--- [download 12% complete]
--- [download 14% complete]
--- [download 15% complete]
--- [download 16% complete]
--- [download 17% complete]
--- [download 18% complete]
--- [download 20% complete]
--- [download 21% complete]
--- [download 22% complete]
--- [download 24% complete]
--- [download 25% complete]
--- [download 26% complete]
--- [download 28% complete]
--- [download 30% complete]
--- [download 31% complete]
--- [download 33% complete]
--- [download 34% complete]
--- [download 36% complete]
--- [download 38% complete]
--- [download 40% complete]
--- [download 42% complete]
--- [download 43% complete]
--- [download 45% complete]
--- [download 46% complete]
--- [download 47% complete]
--- [download 49% complete]
--- [download 50% complete]
--- [download 52% complete]
--- [download 53% complete]
--- [download 55% complete]
--- [download 57% complete]
--- [download 58% complete]
--- [download 60% complete]
--- [download 61% complete]
--- [download 62% complete]
--- [download 63% complete]
--- [download 65% complete]
--- [download 66% complete]
--- [download 68% complete]
--- [download 69% complete]
--- [download 71% complete]
--- [download 72% complete]
--- [download 74% complete]
--- [download 75% complete]
--- [download 77% complete]
--- [download 79% complete]
--- [download 80% complete]
--- [download 82% complete]
--- [download 83% complete]
--- [download 85% complete]
--- [download 86% complete]
--- [download 88% complete]
--- [download 89% complete]
--- [download 90% complete]
--- [download 92% complete]
--- [download 93% complete]
--- [download 96% complete]
--- [download 97% complete]
--- [download 98% complete]
--- [download 99% complete]
--- [download 100% complete]
+"C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2024.3.2/bin/ninja/win/x64/ninja.exe" -DCMAKE_PREFIX_PATH=D:\Qt\5.12.12\mingw73_64\lib\cmake -G Ninja -S D:\Engine\search_engine2025 -B D:\Engine\search_engine2025\cmake-build-debug
+-- Using the multi-header code from D:/Engine/search_engine2025/nlohmann_json/include/
 CMake Deprecation Warning at cmake-build-debug/_deps/googletest-src/CMakeLists.txt:4 (cmake_minimum_required):
   Compatibility with CMake < 3.5 will be removed from a future version of
   CMake.
@@ -98,15 +16,6 @@ CMake Deprecation Warning at cmake-build-debug/_deps/googletest-src/googlemock/C
   CMake that the project does not need compatibility with older versions.
 
 
-CMake Warning (dev) at cmake-build-debug/_deps/googletest-src/googletest/CMakeLists.txt:22 (option):
-  Policy CMP0077 is not set: option() honors normal variables.  Run "cmake
-  --help-policy CMP0077" for policy details.  Use the cmake_policy command to
-  set the policy and suppress this warning.
-
-  For compatibility with older versions of CMake, option is clearing the
-  normal variable 'gtest_disable_pthreads'.
-This warning is for project developers.  Use -Wno-dev to suppress it.
-
 CMake Deprecation Warning at cmake-build-debug/_deps/googletest-src/googletest/CMakeLists.txt:56 (cmake_minimum_required):
   Compatibility with CMake < 3.5 will be removed from a future version of
   CMake.
@@ -115,7 +24,6 @@ CMake Deprecation Warning at cmake-build-debug/_deps/googletest-src/googletest/C
   CMake that the project does not need compatibility with older versions.
 
 
--- Found Python: C:/Python/python.exe (found version "3.13.1") found components: Interpreter
--- Configuring done (8.6s)
+-- Configuring done (0.5s)
 -- Generating done (0.2s)
--- Build files have been written to: D:/c++/search_engine2025/cmake-build-debug
+-- Build files have been written to: D:/Engine/search_engine2025/cmake-build-debug
