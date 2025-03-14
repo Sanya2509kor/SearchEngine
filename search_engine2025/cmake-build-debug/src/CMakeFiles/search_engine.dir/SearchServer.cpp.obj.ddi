@@ -1,0 +1,11 @@
+{
+"rules": [
+{
+"primary-output": "src\\CMakeFiles\\search_engine.dir\\SearchServer.cpp.obj",
+"requires": [
+]
+}
+],
+"version": 0,
+"revision": 0
+}

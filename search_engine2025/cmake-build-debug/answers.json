@@ -1,0 +1,206 @@
+{
+    "answers": {
+        "request001": {
+            "result": true,
+            "relevance": [
+                {
+                    "docid": 0,
+                    "rank": 1.0
+                },
+                {
+                    "docid": 13,
+                    "rank": 0.6666666865348816
+                },
+                {
+                    "docid": 10,
+                    "rank": 0.5641025900840759
+                },
+                {
+                    "docid": 11,
+                    "rank": 0.5384615659713745
+                },
+                {
+                    "docid": 2,
+                    "rank": 0.4615384638309479
+                }
+            ]
+        },
+        "request002": {
+            "result": true,
+            "relevance": [
+                {
+                    "docid": 13,
+                    "rank": 1.0
+                },
+                {
+                    "docid": 3,
+                    "rank": 0.8461538553237915
+                },
+                {
+                    "docid": 2,
+                    "rank": 0.6153846383094788
+                },
+                {
+                    "docid": 6,
+                    "rank": 0.6153846383094788
+                },
+                {
+                    "docid": 9,
+                    "rank": 0.5384615659713745
+                }
+            ]
+        },
+        "request003": {
+            "result": true,
+            "relevance": [
+                {
+                    "docid": 13,
+                    "rank": 1.0
+                },
+                {
+                    "docid": 10,
+                    "rank": 0.3928571343421936
+                },
+                {
+                    "docid": 1,
+                    "rank": 0.3571428656578064
+                },
+                {
+                    "docid": 6,
+                    "rank": 0.3571428656578064
+                },
+                {
+                    "docid": 0,
+                    "rank": 0.2857142984867096
+                }
+            ]
+        },
+        "request004": {
+            "result": true,
+            "relevance": [
+                {
+                    "docid": 13,
+                    "rank": 1.0
+                },
+                {
+                    "docid": 0,
+                    "rank": 0.6969696879386902
+                },
+                {
+                    "docid": 9,
+                    "rank": 0.39393940567970276
+                },
+                {
+                    "docid": 2,
+                    "rank": 0.3333333432674408
+                },
+                {
+                    "docid": 12,
+                    "rank": 0.27272728085517883
+                }
+            ]
+        },
+        "request005": {
+            "result": true,
+            "docid": 6,
+            "rank": 1.0
+        },
+        "request006": {
+            "result": true,
+            "relevance": [
+                {
+                    "docid": 1,
+                    "rank": 1.0
+                },
+                {
+                    "docid": 10,
+                    "rank": 0.5
+                },
+                {
+                    "docid": 11,
+                    "rank": 0.5
+                }
+            ]
+        },
+        "request007": {
+            "result": true,
+            "relevance": [
+                {
+                    "docid": 2,
+                    "rank": 1.0
+                },
+                {
+                    "docid": 13,
+                    "rank": 1.0
+                },
+                {
+                    "docid": 6,
+                    "rank": 0.3333333432674408
+                },
+                {
+                    "docid": 11,
+                    "rank": 0.3333333432674408
+                }
+            ]
+        },
+        "request008": {
+            "result": false
+        },
+        "request009": {
+            "result": true,
+            "relevance": [
+                {
+                    "docid": 0,
+                    "rank": 1.0
+                },
+                {
+                    "docid": 13,
+                    "rank": 0.3777777850627899
+                },
+                {
+                    "docid": 10,
+                    "rank": 0.30000001192092896
+                },
+                {
+                    "docid": 11,
+                    "rank": 0.2666666805744171
+                },
+                {
+                    "docid": 2,
+                    "rank": 0.25555557012557983
+                }
+            ]
+        },
+        "request0010": {
+            "result": true,
+            "relevance": [
+                {
+                    "docid": 13,
+                    "rank": 1.0
+                },
+                {
+                    "docid": 8,
+                    "rank": 0.9166666865348816
+                },
+                {
+                    "docid": 7,
+                    "rank": 0.6666666865348816
+                },
+                {
+                    "docid": 6,
+                    "rank": 0.5833333134651184
+                },
+                {
+                    "docid": 12,
+                    "rank": 0.5833333134651184
+                }
+            ]
+        },
+        "request0011": {
+            "result": false
+        },
+        "request0012": {
+            "result": false
+        }
+    }
+}

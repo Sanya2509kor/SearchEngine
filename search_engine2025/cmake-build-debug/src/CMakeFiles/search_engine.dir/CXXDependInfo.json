@@ -1,0 +1,22 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "GNU",
+	"compiler-simulate-id" : "",
+	"config" : "Debug",
+	"cxx-modules" : {},
+	"dir-cur-bld" : "D:/c++/search_engine2025/cmake-build-debug/src",
+	"dir-cur-src" : "D:/c++/search_engine2025/src",
+	"dir-top-bld" : "D:/c++/search_engine2025/cmake-build-debug",
+	"dir-top-src" : "D:/c++/search_engine2025",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : 
+	[
+		"D:\\c++\\search_engine2025\\include",
+		"D:\\c++\\search_engine2025\\nlohmann_json\\include"
+	],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "D:/c++/search_engine2025/cmake-build-debug/src/CMakeFiles/search_engine.dir"
+}

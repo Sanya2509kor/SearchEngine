@@ -1,0 +1,11 @@
+{
+"rules": [
+{
+"primary-output": "test\\testSearch_engine\\CMakeFiles\\testSearch_engine.dir\\test.cpp.obj",
+"requires": [
+]
+}
+],
+"version": 0,
+"revision": 0
+}
