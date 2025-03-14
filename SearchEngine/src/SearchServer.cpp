@@ -8,12 +8,20 @@ std::vector<std::vector<RelativeIndex> > SearchServer::search(const std::vector<
         std::stringstream text(request);
         std::string word;
         std::vector<std::string> unique_list;
+        int count_word = 0;
         while (text >> word) {
+            count_word += 1;
+            if (count_word > 10) {break;}
             bool unique = true;
             for (auto & str : unique_list) {
                 if (word == str) unique = false;
             }
             if (unique) unique_list.push_back(word);
+        }
+        if (count_word > 10) {
+            std::cerr << "Error, there are more than 10 words in the query. Your request: (" << request << ")" << std::endl;
+            list_answers.push_back({{}});
+            continue;
         }
 
         //Если делать как в ТЗ, то вот так получается

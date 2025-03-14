@@ -79,20 +79,26 @@ int ConverterJSON::GetResponsesLimit() {
 std::vector<std::string> ConverterJSON::GetRequests() {
     nlohmann::json json;
     std::ifstream file(requests_json);
-    std::vector<std::string> answers;
+    std::vector<std::string> requests;
     if (!file.is_open()) {
         throw std::invalid_argument("config file is missing");
     }
     file >> json;
     if (json.count("requests") > 0) {
+        int count_requests = 0;
         for (std::string files : json["requests"]) {
-            answers.push_back(files);
+            count_requests += 1;
+            if (count_requests > 1000) {
+                std::cerr << "Error, there are more than 1000 requests" << std::endl;
+                break;
+            }
+            requests.push_back(files);
         }
     } else {
         std::cerr << "There are no requests. Edit the requests file.json and enter \"update\"" << std::endl;
     }
     file.close();
-    return answers;
+    return requests;
 }
 
 void ConverterJSON::putAnswers(std::vector<std::vector<RelativeIndex>> answers) {
@@ -102,6 +108,8 @@ void ConverterJSON::putAnswers(std::vector<std::vector<RelativeIndex>> answers) 
 
     bool result = false;
     for (int i = 0; i < answers.size(); i++) {
+        std::string request;
+        (i >= 9) ? ((i >= 99) ? (request = "request") : (request = "request0")) : (request = "request00");
         nlohmann::ordered_json relevance;
         if (answers[i].size() > 0) {result = true;}
 
@@ -110,18 +118,18 @@ void ConverterJSON::putAnswers(std::vector<std::vector<RelativeIndex>> answers) 
         }
 
         if (answers[i].size() > 1) {
-            json["answers"]["request00" + std::to_string(i + 1)] = {
+            json["answers"][request + std::to_string(i + 1)] = {
                 {"result", result},
                 {"relevance", relevance}
             };
         } else if (answers[i].size() > 0){
-            json["answers"]["request00" + std::to_string(i + 1)] = {
+            json["answers"][request + std::to_string(i + 1)] = {
                 {"result", result},
                 {"docid", answers[i][0].doc_id},
                 {"rank", answers[i][0].rank}
             };
         } else {
-            json["answers"]["request00" + std::to_string(i + 1)] = {
+            json["answers"][request + std::to_string(i + 1)] = {
                 {"result", result}
             };
         }
