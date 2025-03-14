@@ -1,9 +1,0 @@
-ninja_dyndep_version = 1.0
-build src/CMakeFiles/search_engine.dir/main.cpp.obj: dyndep
-
-build src/CMakeFiles/search_engine.dir/ConverterJSON.cpp.obj: dyndep
-
-build src/CMakeFiles/search_engine.dir/InvertedIndex.cpp.obj: dyndep
-
-build src/CMakeFiles/search_engine.dir/SearchServer.cpp.obj: dyndep
-
