@@ -41,9 +41,23 @@ void InvertedIndex::Streams(size_t doc_id, const std::string& input_doc) {
     std::stringstream doc(input_doc);
     std::string word;
     std::map<std::string, Entry> freq;
+    int count = 0;
     while (doc >> word) {
+        if (word.size() > 100) {
+            mut.lock();
+            std::cerr << "Error, A word has more than 100 characters in a document ID = " << doc_id  << std::endl;
+            mut.unlock();
+            return;
+        }
         freq[word].doc_id = doc_id;
         freq[word].count += 1;
+        count += 1;
+        if (count > 1000) {
+            mut.lock();
+            std::cerr << "Error, file ID - " << doc_id<< " contains more than 1000 words"  << std::endl;
+            mut.unlock();
+            return;
+        }
     }
     mut.lock();
     for (auto &map : freq) {
