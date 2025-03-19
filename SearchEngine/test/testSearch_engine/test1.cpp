@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 #include "../../include/InvertedIndex.h"
 #include "../../src/InvertedIndex.cpp"
-#include "../../SearchServer.h"
+#include "../../include/SearchServer.h"
 #include "../../src/SearchServer.cpp"
 
 using namespace std;
