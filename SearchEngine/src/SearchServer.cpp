@@ -24,93 +24,72 @@ std::vector<std::vector<RelativeIndex> > SearchServer::search(const std::vector<
             continue;
         }
 
-        //считаем частоту каждого слова. Если есть слово с частотой 0, пропускаем запрос, записываем пустой вектор
-        bool check_0 = false;
-        std::vector<size_t> id_size;
-        for (auto &word : unique_list) {
-            size_t count = 0;
-            for (auto &entry : _index.GetWordCount(word)) {
-                count += entry.count;
-            }
-            if (count == 0) {
-                list_answers.push_back({});
-                check_0 = true;
-                break;
-            }
-            id_size.push_back(count);
-        }
-        if (check_0) {
-            continue;
-        }
 
-        //сортировка слов по увеличению частоты
+        //создание вектора с частотой слов
+        std::vector<size_t> vec;
+        for (auto &word : unique_list) {
+            size_t count_word = 0;
+            for (auto &[doc_id, count] : _index.GetWordCount(word)) {
+                count_word += count;
+            }
+            vec.push_back(count_word);
+        }
+        //сортировка от самого редкого
         for (int i = 0; i < unique_list.size(); i++) {
             for (int j = 0; j < unique_list.size() - 1 - i; j++) {
-                if (id_size[j] > id_size[j + 1]) {
-                    std::swap(id_size[j], id_size[j + 1]);
+                if (vec[j] > vec[j + 1]) {
+                    std::swap(vec[j], vec[j + 1]);
                     std::swap(unique_list[j], unique_list[j + 1]);
                 }
             }
         }
-
-        //ищем все документы в которых есть первое слово
-        std::map<size_t, int> docs;
-        for (auto &entry : _index.GetWordCount(unique_list[0])) {
-            docs[entry.doc_id] = 0;
-        }
-
-        //проверяем, есть ли остальные слова в этих документах, и находим абсолютную релевантность
+        //Получаем список документов, где слово встречается и увеличиваем счётчик совпадений
+        //считаем абсолютную релевантность для каждого документа
+        std::map<size_t, int> doc_to_hitcount;
+        std::map<size_t, int> abs_relevance;
         for (auto &word : unique_list) {
-            std::map<size_t, int> docs_in_word;
+            for (auto &[doc_id, count] : _index.GetWordCount(word)) {
+                doc_to_hitcount[doc_id] += 1;
+                abs_relevance[doc_id] += count;
+            }
+        }
+        //Проходим по списку слов, ищем max в документах с этим словом. После считаем rank
+        std::vector<RelativeIndex> relative_index;
+        std::map<size_t, double> check_docs;
+        for (auto &word : unique_list) {
+            double max = 0;
             for (auto &entry : _index.GetWordCount(word)) {
-                for (auto &doc : docs) {
-                    if (entry.doc_id == doc.first) {
-                        docs_in_word[doc.first] = 0;
-                        docs[doc.first] += entry.count;
-                        break;
-                    }
+                if (max < abs_relevance[entry.doc_id] && check_docs[entry.doc_id] == 0) {
+                    max = abs_relevance[entry.doc_id];
                 }
             }
-            if (docs.size() > docs_in_word.size()) {
-                for (auto &pair : docs_in_word) {
-                    pair.second = docs[pair.first];
+            for (auto &entry : _index.GetWordCount(word)) {
+                if (check_docs[entry.doc_id] == 0) {
+                    RelativeIndex relative;
+                    check_docs[entry.doc_id] = abs_relevance[entry.doc_id] / max * doc_to_hitcount[entry.doc_id] / count_word;
+                    relative.doc_id = entry.doc_id;
+                    relative.rank = check_docs[entry.doc_id];
+                    relative_index.push_back(relative);
                 }
-                docs = docs_in_word;
             }
         }
 
-
-        double max = 0;
-        for (auto &pair : docs) {
-            if (max < pair.second) {
-                max = pair.second;
-            }
-        }
-
-        //вычисление релевантности
-        std::vector<RelativeIndex> relative;
-        for (auto &pair : docs) {
-            RelativeIndex index;
-            index.doc_id = pair.first;
-            index.rank = pair.second / max;
-            relative.push_back(index);
-        }
 
         //сортировка документов по убыванию релевантности
-        for (int i = 0; i < relative.size(); i++) {
-            for (int j = 0; j < relative.size() - 1; j++) {
-                if (relative[j].rank < relative[j + 1].rank) {
-                    std::swap(relative[j], relative[j + 1]);
+        for (int i = 0; i < relative_index.size(); i++) {
+            for (int j = 0; j < relative_index.size() - 1; j++) {
+                if (relative_index[j].rank < relative_index[j + 1].rank) {
+                    std::swap(relative_index[j], relative_index[j + 1]);
                 }
             }
         }
 
 
-        if (relative.size() > responsesLimit) {
-            relative.resize(responsesLimit);
+        if (relative_index.size() > responsesLimit) {
+            relative_index.resize(responsesLimit);
         }
 
-        list_answers.push_back(relative);
+        list_answers.push_back(relative_index);
     }
     return list_answers;
 }
